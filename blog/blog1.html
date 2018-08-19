@@ -21,7 +21,7 @@
 				</div>
 			</header>
 		<!-- Main -->
-			<div style="margin-left: auto; margin-right: auto; max-width: 75em; padding: 8em 4em 4em 4em; width: calc(100% - 25%);">
+			<div style="margin-left: auto; margin-right: auto; max-width: 100em; padding: 8em 4em 4em 4em; width: calc(100% - 25%);">
 
 				<!-- One -->
 					<section id="one">
@@ -49,13 +49,13 @@
 								   inspired from the brain. In fact, the most about the brain that a majority of the deep learning researchers are aware of is the hierarchical layer wise organization
 								   of the biological neural networks which motivated the early Artificial Neural Network (ANN) architecture. Given the rather sluggish progress made in Neuroscience research thus far, it might be welcoming to
 								   know that advances in deep learning are not necessarily dependent on gaining new knowledge about the brain. However, if you are someone like me with a fascination for understanding the brain, there are a few connections
-								   that you might observe modern deep learning research to be making with ideas from neuroscience. In this blog post, I would like to discuss about one of my favourites from Bengio - 'Target Propagation' and how the model relates to actual brain dynamics.
+								   that you might observe modern deep learning research to be making with ideas from neuroscience. In the rest of this blog post, I would like to lead on to how 'Target Propagation' - one of my favourites from Bengio, has come close to mapping the brain dynamics.
 						</p>
 						<p align="justify">Even before Hubel and Wiesel's cat experiment (which proposed the hierarchical layering in biological neural networks, 1960s), and the proposal for backpropagation (the learning algorithm behind ANN's success, 1970s),
 								   the first model of a single neuron was conceived (1950s) by Hodgkin and Huxley. The early neuron model was deeply inspired by everything known at that time about the brain. However, network models of these biologically realistic neurons
 								   fell short in its applicability as a pattern recognition technique, and failed to produce convincing results in very simple problems (solving XOR, for example). It took another couple decades for
-								   researchers to dump the then-prevalent idea of a neuron as a discrete processing unit, and adopt continuous nonlinearities in the model that could frame learning (through backpropagation) in these networks as a tractable problem. This marked a major shift in neural network
-								   research, and led to the inception of ANNs as we know it today. However, a small section of researchers chose to stick on to the discrete neuron model so as to capture a realistic mapping of what actually goes on in the brain, and these network models came to be known by the name - 'Artificial Spiking neuron networks' (SNN).
+								   researchers to discard the then-prevalent idea of a neuron as a discrete processing unit, and adopt continuous nonlinearities in the model that could frame learning (through backpropagation) in these networks as a tractable problem. This marked a major shift in neural network
+								   research, and led to the inception of ANNs as we know it today. However, a small section of researchers chose to stick to the discrete neuron model so as to capture a realistic mapping of what actually goes on in the brain, and these network models came to be recognized as - 'Artificial Spiking neuron networks' (SNN).
 								   The constraint of having to map the biological circuitry, hindered progress in SNN research and it was slow to gain traction due to the wider acceptance of ANN models which could exploit the added flexibility and mathematical ease that came with continuous function transformations.
 								   This prompted researchers working with SNNs to explore the idea of <emp><b>hypothesizing</b></emp> about the functional brain via theoretical analysis and mathematical modeling
 								   consistent with biological neural systems. In fact, Hodgkin & Huxley's pioneering work on the single neuron model was theorized out of mathematical
@@ -70,15 +70,15 @@
 								   to as 'Muscle Memory'. As per the idea, every time we attempt to learn a new task a specialised group of neurons assist a student network until it is trained enough to perform the task autonomously, which sure sounds like a promising explanation to me, but it is best left for the neuroscientists to ascertain.
 						</p>
        					        <p align="justify">Now, how much has the ANN research community contributed to explaining the brain? Abbott's idea of SNN models hinged on the student-teacher paradigm which was widely put to use by the deep learning community, primarily as an approach for 'model compression'. Knowledge Distillation, and FitNets were among the pioneering ideas 
-								   that allowed deep learned models to be successfully run in devices with less compute, like mobile phones. The objective of model compression was to teach a wider/deeper network with fewer parameters, from the targets set by a much bulkier network. A much more interesting application of student teacher modelling is the Target
+								   that allowed deep learned models to be successfully deployed in devices with less compute, like mobile phones. The objective of model compression was to teach a wider/deeper network with fewer parameters, from the targets set by a much bulkier network. A much more interesting application of student teacher modelling is the Target
 								   Propagation learning algorithm, which was first put forward by Yann LeCun in 1986, as a method to describe weight updates for each hidden unit. The recent improvisations by Bengio and team, have framed Target prop as a much more general version of the Backprop learning algorithm, that can handle extemely non-linear functions
 								   to the level of discrete mappings. The teacher network in Bengio's model is comprised of individual decoder networks that produce an output that is guaranteed to be closer to the direction of higher likelihood. Target prop, despite being shown to achieve excellent results, is only being used sparingly as Backprop continues
 								   to be the go-to choice for researchers, but nonetheless, the ideas behind Target Prop are super exciting for someone fascinated about the brain.
 						</p>
-						<!--<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>-->
+						
 					</section>
+				
+			</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
