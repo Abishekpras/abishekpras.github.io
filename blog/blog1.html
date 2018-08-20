@@ -17,32 +17,33 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 			
-			.topnav {
-    					background-color: #FFFAFA;
-    					overflow: hidden;
-				}
+			ul {
+    				list-style-type: none;
+    				margin: 0;
+    				padding: 0;
+    				overflow: hidden;
+   				background-color: #FFFAFA;
+			}
 
-			/* Style the links inside the navigation bar */
-			.topnav a {
-    					float: left;
-    					color: #D8BFD8;
-    					text-align: center;
-    					padding: 14px 16px;
-    					text-decoration: none;
-    					font-size: 17px;
-				   }
+			li {
+    				float: left;
+			}
 
-			/* Change the color of links on hover */
-			.topnav a:hover {
-    						background-color: #FFFAFA;
-    						color: white;
-					}
+			li a {
+    				display: block;
+    				color: black;
+    				text-align: center;
+    				padding: 14px 16px;
+    				text-decoration: none;
+			}
 
-			/* Add a color to the active/current link */
-			.topnav a.active {
-    						background-color: #FFFAFA;
-    						color: black;
-					 }
+			li a:hover:not(.active) {
+    				background-color: #FFFAFA;
+			}
+
+			.active {
+    				background-color: #FFFAFA;
+			}
 		</style>
 	</head>
 	
@@ -51,10 +52,18 @@
 		<!-- Header -->
 			<header>
 				<div class="topnav">
-  					<a class="active" href="../index.html#blog_main"><i class="fa fa-home" style="font-size:24px"></i></a>
-					<span>&nbsp;&#124;&nbsp;&nbsp;</span>
+					<ul>
+						<li><a href="../index.html#blog_main"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+  						<li><span>&nbsp;&#124;&nbsp;&nbsp;</span></li>
+  						<li><b>METAPHORS IN COMPUTER SCIENCE</b></li>
+  						<li style="float:right"><a class="active" href="../index.html"><b>ABISHEK PRASANNA</b></a></li>
+					</ul>
+  					<!--
+					<a class="active" href="../index.html#blog_main"><i class="fa fa-home" style="font-size:24px"></i></a>
+					
 					<p style="margin:auto; border: 3px; padding:10px; font: normal 18px Verdana, Arial, sans-serif;"><b>METAPHORS IN COMPUTER SCIENCE</b></p>
 					<p style="text-align:right;margin:auto; border: 3px; padding:10px; font: normal 16px Verdana, Arial, sans-serif;"><b>ABISHEK PRASANNA</b></p>
+					-->
 				</div>
 			</header>
 		<!-- Main -->
