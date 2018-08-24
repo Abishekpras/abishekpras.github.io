@@ -68,9 +68,9 @@
 						<br>
 						<p align="justify">The animal brain is undoubtedly one of the least understood biological structures in the known universe. The role of single neurons in information processing is very well studied mainly due to the relative ease with which their electrical activity may be recorded
 								    through electrodes inserted into the brain. However, the brain is composed of many other cells and all their functions are not thoroughly studied. The human brain, for instance has a 1:1 count of neurons and 'glial cells' (Glia - Greek for 'glue'). Astrocytes, a particular type of glial cells are known to comprise
-								    about 20-40% of all glial cells in the human brain [6]. They are "electrically silent" or passive and for a very long time were thought to only help with the neuronal nourishment and structural support. However, very recently when Calcium Imaging first started finding application in analysing neuronal activity, astrocytes caught
+								    about 20-40% of all glial cells in the human brain. They are "electrically silent" or passive and for a very long time were thought to only help with the neuronal nourishment and structural support. However, very recently when Calcium Imaging first started finding application in analysing neuronal activity, astrocytes caught
 								    the attention of researchers. Astrocytes were seen to communicate through Calcium waves with networks of neurons, and also with other astrocytes forming a network amongst themselves. Further studies have shown that a single astrocyte is capable of sensing activity at tens of thousands of synapses (connection between neurons) through
-								    tight associations with the presynaptic (sender) and postsynaptic (receiver) neuron ends thus forming a 'tripartite synapse'. What is even more exciting is the fact that they are capable of sensing the communication at a synapse and stop a presynaptic neuron from firing, or even trigger the firing of a postsynaptic neuron at their own discretion [5].
+								    tight associations with the presynaptic (sender) and postsynaptic (receiver) neuron ends thus forming a 'tripartite synapse'. What is even more exciting is the fact that they are capable of sensing the communication at a synapse and stop a presynaptic neuron from firing, or even trigger the firing of a postsynaptic neuron at their own discretion.
 								    Astrocytic networks are attracting a lot of interest in neuroscience research and are now considered to play a crucial part in neural signal transmission.
 						</p>
 						<br>
@@ -119,9 +119,31 @@
 							           the student network always takes a step in the direction of higher likelihood. Target propagation, despite achieving excellent results in various real-world learning problems, is only sparingly used as Backpropagation continues
 								   to be the go-to choice for researchers and engineers. But nonetheless, the ideas behind Target Prop are what opened the direction of research involving student-teacher networks for learning, like that of Abbott's functional network model which stirred the computational neuroscience research community.
 						</p>
+			</div>
+			<figure role="group">
+    				<!--<figcaption>Caption for the whole group of images</figcaption>-->
+
+    				<figure>
+        				<img src="../images/blog1_3.png" alt="FitNets as an example of STN used for model compression">
+        				<figcaption>Figure : Fitnets applied to object detection. Original paper proposes learning deeper and leaner student models. Image Credits : Xiang Yu</figcaption>
+    				</figure>
+
+    				<figure>
+        				<img src="../images/blog1_4.png" alt="Target Propagation leaning algorithm model for a 4 layered student network">
+					<figcaption>Layers (A,B,C,D) with weights [ W<sub>1</sub>, W<sub>2</sub>, W<sub>3</sub>, W<sub>4</sub> ] are learning the functions [ f<sub>1</sub>(x), f<sub>2</sub>(x), f<sub>3</sub>(x), f<sub>4</sub>(x) ] respectively. Additionally {decoders} (A',B',C',D') with weights [ V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub>, V<sub>4</sub> ] are coupled with {encoders} (A,B,C,D) as 4 separate autoencoders such that the decoders learn functions [ g<sub>1</sub>(x), g<sub>2</sub>(x), g<sub>3</sub>(x), g<sub>4</sub>(x) ] which are trained to generate approximate inverses [ f<sub>1</sub><sup>(-1)</sup>(x), f<sub>2</sub><sup>(-1)</sup>(x), f<sub>3</sub><sup>(-1)</sup>(x), f<sub>4</sub><sup>(-1)</sup>(x) ] as reconstructions for encoder input</figcaption>
+    				</figure>
+
+			</figure>
+			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">
 						<p align="justify">Will Target Propagation or other biologically realistic learning algorithms ever trump Backpropagation and gain wide-scale adoption? Could some form of interconnected teacher networks, like in Neuron-Astrocytic networks be the next step in Target Propagation? Check out the reference section and get started with research in this area!
 						</p>
-						
+						<p align="justify"><b>REFERENCES</b>
+							<ul>
+  								<li>1</li>
+  								<li>2</li>
+  								<li>3</li>
+							</ul> 
+						</p>
 					</section>
 				
 			</div>
