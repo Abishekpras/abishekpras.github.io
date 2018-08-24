@@ -113,6 +113,7 @@
 								   is modified into one of identifying the input transformation that causes the teacher to produce the expected output (in a supervised learning setting), and setting appropriate targets for the student to learn the exact input-output mapping. Abbott's model posits that such a student teacher setup might be the explanation behind how we learn new tasks quickly, a concept coomonly referred
 								   to as 'Muscle Memory'. As per the idea, every time we attempt to learn a new task a specialised group of neurons assist a student network until it is trained enough to perform the task autonomously, which sure sounds like a promising explanation to me, but it is best left for the neuroscientists to ascertain.
 						</p>
+					</section>
 			</div>
 			<div class="row">
 			<figure>
@@ -120,7 +121,8 @@
 				<figcaption style="text-align:center;margin:auto;">Figure : Fitnets applied to object detection. Original paper proposes learning deeper and leaner student models. Image Credits : Xiang Yu</figcaption>
 			</figure>
 			</div>
-			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">	
+			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">
+					<section id="one">
        					        <p align="justify">Now, how much has the ANN research community contributed to explaining the brain? Abbott's idea of SNN models hinged on the student-teacher paradigm which was widely put to use by the deep learning community, primarily as an approach for 'model compression'. Knowledge Distillation, and FitNets were among the pioneering ideas 
 								   that allowed deep learned models to be successfully deployed in devices with less compute, like mobile phones. The objective of model compression was to teach a wider/deeper network with fewer parameters, from the targets set by a much bulkier network. A much more interesting application of student teacher modelling, and one of my favourites,  is the Target
 								   Propagation learning algorithm, which was first put forward by Yann LeCun in 1986 as a method to describe weight updates for each hidden unit of a network. The recent improvisations put forward by Bengio and team, have framed Target propagation as a much more general version of the Backpropagation learning algorithm, that can handle extemely non-linear functions
@@ -128,6 +130,7 @@
 							           the student network always takes a step in the direction of higher likelihood. Target propagation, despite achieving excellent results in various real-world learning problems, is only sparingly used as Backpropagation continues
 								   to be the go-to choice for researchers and engineers. But nonetheless, the ideas behind Target Prop are what opened the direction of research involving student-teacher networks for learning, like that of Abbott's functional network model which stirred the computational neuroscience research community.
 						</p>
+					</section>
 			</div>
 			
 			<div class="row">
@@ -138,19 +141,27 @@
 			</div>
 
 			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">
+				<section id="one">
 						<p align="justify">Will Target Propagation or other biologically realistic learning algorithms ever trump Backpropagation and gain wide-scale adoption? Could some form of interconnected teacher networks, like in Neuron-Astrocytic networks be the next step in Target Propagation? Check out the reference section and get started with research in this area!
 						</p>
 						<p align="justify"><b>REFERENCES</b>
-							<!--
-							<ul>
-  								<li>1</li>
-  								<li>2</li>
-  								<li>3</li>
-							</ul>
-							-->
+							<p>STNs in model compression : FitNets and Knowledge Distillation</p>
+							<ol>
+								<li> Adriana Romero et.al, FitNets : Hints for Thin Deep Nets, ICLR 2015</li>
+								<li> Hinton et.al, Distilling the Knowledge in a Neural Network, NIPS '14</li>
+							</ol>
+							<p>Target Propagation : Bengio's approach of using autoencoder reconstructions as targets</p>
+							<ol>
+								<li> Bengio, How auto-encoders could provide credit assignment in deep networks via target propagation. Tech. rep., arXiv:1407.7906 (2014)</li>
+								<li> Dong-Hyun Lee et.al, Difference Target Propagation, in Machine Learning and Knowledge Discovery in Databases, pages 498-515, Springer International Publishing, 2015</li>
+							</ol>
+							<p>Astrocytes : Counts and functions played in Neuron-Astrocytic network</p>
+							<ol>
+								<li> Rogier Min et. al, The computational power of astrocyte mediated synaptic plasticity, Frontiers in Comput. NeuroScience 2012 [6] von Bartheld et.al, The Search for True Numbers of Neurons and Glial Cells in the Human Brain: A Review of 150 Years of Cell Counting, J. Comp. Neurol. 524, 3865–3895. 10.1002/cne.24040</li>
+								<li> Bernardinelli et. al. Astrocytes display complex and localized calcium rto single-neuron stimulation in the hippocampus. J. Neurosci. 2011, 31, 8905–8919.</li>
+							</ol>
 						</p>
-					</section>
-				
+				</section>
 			</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
