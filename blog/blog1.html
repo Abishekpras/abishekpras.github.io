@@ -16,6 +16,22 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
+			* {
+    				box-sizing: border-box;
+			}
+
+			.column {
+    				float: left;
+    				width: 50%;
+    				padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
 			
 			ul {
     				list-style-type: none;
@@ -120,6 +136,16 @@
 								   to be the go-to choice for researchers and engineers. But nonetheless, the ideas behind Target Prop are what opened the direction of research involving student-teacher networks for learning, like that of Abbott's functional network model which stirred the computational neuroscience research community.
 						</p>
 			</div>
+			
+			<div class="row">
+  				<div class="column">
+    					<img src="blog1_3.png" alt="Forest" style="width:100%">
+  				</div>
+  				<div class="column">
+    					<img src="blog1_4.png" alt="Mountains" style="width:100%">
+  				</div>
+			</div>
+
 			<figure role="group">
     				<!--<figcaption>Caption for the whole group of images</figcaption>-->
 
@@ -138,11 +164,13 @@
 						<p align="justify">Will Target Propagation or other biologically realistic learning algorithms ever trump Backpropagation and gain wide-scale adoption? Could some form of interconnected teacher networks, like in Neuron-Astrocytic networks be the next step in Target Propagation? Check out the reference section and get started with research in this area!
 						</p>
 						<p align="justify"><b>REFERENCES</b>
+							<!--
 							<ul>
   								<li>1</li>
   								<li>2</li>
   								<li>3</li>
-							</ul> 
+							</ul>
+							-->
 						</p>
 					</section>
 				
