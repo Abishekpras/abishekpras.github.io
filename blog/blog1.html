@@ -16,22 +16,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
-			* {
-    				box-sizing: border-box;
-			}
-
-			.column {
-    				float: left;
-    				width: 50%;
-    				padding: 5px;
-			}
-
-			/* Clearfix (clear floats) */
-			.row::after {
-    				content: "";
-    				clear: both;
-    				display: table;
-			}
 			
 			ul {
     				list-style-type: none;
@@ -62,7 +46,23 @@
 			}
 		</style>
 	</head>
-	
+	<!--
+			* {
+    				box-sizing: border-box;
+			}
+
+			.column {
+    				float: left;
+    				width: 50%;
+    				padding: 5px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}-->
 	<body class="is-preload" style="background:#FFFAFA;margin:0;min-height:100%;font: normal 16px "Source Sans Pro", Helvetica, sans-serif;">
 
 		<!-- Header -->
@@ -138,13 +138,13 @@
 			</div>
 			
 			<div class="row">
-  				<div class="column">
+  				<div class="col-6 col-12-xsmall work-item">
     					<figure>
 					<img src="../images/blog1_3.png" alt="FitNets as an example of STN used for model compression" style="width:100%">
 					<figcaption>Figure : Fitnets applied to object detection. Original paper proposes learning deeper and leaner student models. Image Credits : Xiang Yu</figcaption>
 					</figure>
   				</div>
-  				<div class="column">
+  				<div class="col-6 col-12-xsmall work-item">
     					<figure>
 					<img src="../images/blog1_4.png" alt="Target Propagation leaning algorithm model for a 4 layered student network" style="width:100%">
   					<figcaption>Figure: Encoders (A,B,C,D) with weights [ W<sub>1</sub>, W<sub>2</sub>, W<sub>3</sub>, W<sub>4</sub> ] are learning the functions [ f<sub>1</sub>(x), f<sub>2</sub>(x), f<sub>3</sub>(x), f<sub>4</sub>(x) ] respectively. {Decoders} (A',B',C',D') with weights [ V<sub>1</sub>, V<sub>2</sub>, V<sub>3</sub>, V<sub>4</sub> ] learn functions [ g<sub>1</sub>(x), g<sub>2</sub>(x), g<sub>3</sub>(x), g<sub>4</sub>(x) ] that approximate inverse of encoder functions [ f<sub>1</sub><sup>-1</sup>(x), f<sub>2</sub><sup>-1</sup>(x), f<sub>3</sub><sup>-1</sup>(x), f<sub>4</sub><sup>-1</sup>(x) ] thereby producing a good reconstruction to be set as target</figcaption>
