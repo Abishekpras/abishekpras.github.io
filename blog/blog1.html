@@ -46,23 +46,7 @@
 			}
 		</style>
 	</head>
-	<!--
-			* {
-    				box-sizing: border-box;
-			}
-
-			.column {
-    				float: left;
-    				width: 50%;
-    				padding: 5px;
-			}
-
-			/* Clearfix (clear floats) */
-			.row::after {
-    				content: "";
-    				clear: both;
-    				display: table;
-			}-->
+	
 	<body class="is-preload" style="background:#FFFAFA;margin:0;min-height:100%;font: normal 16px "Source Sans Pro", Helvetica, sans-serif;">
 
 		<!-- Header -->
@@ -129,6 +113,14 @@
 								   is modified into one of identifying the input transformation that causes the teacher to produce the expected output (in a supervised learning setting), and setting appropriate targets for the student to learn the exact input-output mapping. Abbott's model posits that such a student teacher setup might be the explanation behind how we learn new tasks quickly, a concept coomonly referred
 								   to as 'Muscle Memory'. As per the idea, every time we attempt to learn a new task a specialised group of neurons assist a student network until it is trained enough to perform the task autonomously, which sure sounds like a promising explanation to me, but it is best left for the neuroscientists to ascertain.
 						</p>
+			</div>
+			<div class="row">
+			<figure>
+    				<img src="../images/blog1_3.png" alt="FitNets as an example of STN used for model compression" style="width:100%;">
+				<figcaption>Figure : Fitnets applied to object detection. Original paper proposes learning deeper and leaner student models. Image Credits : Xiang Yu</figcaption>
+			</figure>
+			</div>
+			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">	
        					        <p align="justify">Now, how much has the ANN research community contributed to explaining the brain? Abbott's idea of SNN models hinged on the student-teacher paradigm which was widely put to use by the deep learning community, primarily as an approach for 'model compression'. Knowledge Distillation, and FitNets were among the pioneering ideas 
 								   that allowed deep learned models to be successfully deployed in devices with less compute, like mobile phones. The objective of model compression was to teach a wider/deeper network with fewer parameters, from the targets set by a much bulkier network. A much more interesting application of student teacher modelling, and one of my favourites,  is the Target
 								   Propagation learning algorithm, which was first put forward by Yann LeCun in 1986 as a method to describe weight updates for each hidden unit of a network. The recent improvisations put forward by Bengio and team, have framed Target propagation as a much more general version of the Backpropagation learning algorithm, that can handle extemely non-linear functions
@@ -139,18 +131,10 @@
 			</div>
 			
 			<div class="row">
-  				<div class="col-6">
-    					<figure>
-					<img src="../images/blog1_3.png" alt="FitNets as an example of STN used for model compression" style="width:100%;">
-					<figcaption>Figure : Fitnets applied to object detection. Original paper proposes learning deeper and leaner student models. Image Credits : Xiang Yu</figcaption>
-					</figure>
-  				</div>
-  				<div class="col-6">
-    					<figure>
+				<figure>
 					<img src="../images/blog1_4.png" alt="Target Propagation leaning algorithm model for a 4 layered student network" style="width:100%;">
   					<figcaption>Figure: Encoders (A:D) with weights [ W<sub>1</sub>:W<sub>4</sub> ] learn the functions [ f<sub>1</sub>(x):f<sub>4</sub>(x) ] respectively. {Decoders} (A':D') with weights [ V<sub>1</sub>:V<sub>4</sub> ] learn functions [ g<sub>1</sub>(x):g<sub>4</sub>(x) ] that are approximate inverse of encoder functions thereby producing good reconstructions set as targets</figcaption>
-					</figure>
-				</div>
+				</figure>
 			</div>
 
 			<div id="main_div" style="margin: auto; max-width: 100em; padding: 2em 2em 2em 2em; ">
